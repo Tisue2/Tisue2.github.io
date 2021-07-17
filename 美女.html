@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #000;
+        }
+
+        @keyframes move {
+            to {
+                transform: scale(1.2);
+            }
+        }
+
+        @keyframes yanse {
+            25% {
+                color: skyblue;
+            }
+
+            50% {
+                color: #0a0;
+            }
+
+            75% {
+                color: gold;
+            }
+
+            100% {
+                color: red;
+            }
+        }
+
+        .meinv a {
+            display: block;
+            margin: 100px;
+            animation: move .6s infinite linear alternate;
+        }
+
+        .meinv {
+            width: 350px;
+            height: 200px;
+            position: relative;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .meinv h1 {
+            color: #f00;
+            text-shadow: 0 0 20px #fff;
+            animation: yanse 1s infinite linear alternate;
+        }
+
+        .son {
+            position: absolute;
+            width: 92px;
+            height: 80px;
+            top: 240px;
+            right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="meinv">
+        <h1>进直播间一起聊天吧~</h1>
+        <a href="https://www.douyu.com/g_dance" target="_blank">
+            <img src="./美女.jpg" alt=""></a>
+        <div class="son">
+            <img src="./hand.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
